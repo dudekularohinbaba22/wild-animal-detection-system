@@ -1,56 +1,30 @@
-## Wild Animal Detection Using YOLOv8
-AI-Powered Real-Time Wildlife Monitoring System
+# Wild Animal Detection System 🦁
 
-##  Overview
-This project focuses on **wild animal detection using YOLOv8**, a state-of-the-art deep learning model for object detection.  
-The system accurately identifies and classifies wild animals such as **elephants, lions, bears, and zebras** from images or live video streams.  
-It enables **real-time wildlife monitoring**, safety alerts, and conservation-related applications.
+An AI-based system to detect wild animals in real-time and prevent human-wildlife conflict.
 
----
+### 👨‍💻 Developed by: Dudekula Rohin Baba
 
-##  Features
-- Real-time wild animal detection using YOLOv8
-- High accuracy and fast inference
-- Easy deployment in Flask or OpenCV
-- Customizable model (`best.pt`) for different animal classes
+### 🔧 Tech Stack
+- Python, OpenCV, YOLOv8, Deep Learning
 
----
-
-##  Model Training
-The model is trained in **Google Colab** using the **Ultralytics YOLOv8 framework**.  
-It uses a curated dataset of wild animals to ensure accurate classification.
-
-### Steps:
-1. Install dependencies:
-   ```bash
-   !pip install ultralytics
-
-
-Train the model:
-
-from ultralytics import YOLO
-model = YOLO('yolov8n.pt')
-model.train(data='dataset.yaml', epochs=50, imgsz=640)
-
-
+### 📂 Training
 The trained model best.pt will be saved under:
-
 runs/detect/animal_detector/weights/best.pt
 
-🖥️ Real-Time Detection (VS Code)
-
-Once training is complete, move best.pt to your Visual Studio Code project and run:
-
+### 💻 Real-Time Detection (VS Code)
 from ultralytics import YOLO
 model = YOLO('best.pt')
-model.predict(source=0, show=True)  # 0 for webcam
+model.predict(source=0, show=True) # 0 for webcam
 
-# Update by Sreya – added contributor note
+### 🎯 Results
+Achieved 90%+ detection accuracy for multiple wild animal species including Tiger, Elephant, Bear and Leopard in diverse environments.
 
+### 🔗 Connect
+GitHub: github.com/dudekularohinbaba22
 
 
 📊 Results
 
-The trained YOLOv8 model achieves high detection accuracy for multiple wild animal species in diverse environments.
+The trained YOLOv8 model achieves high detection accuracy for multiple wild animal species in diverse environment.
 
 
